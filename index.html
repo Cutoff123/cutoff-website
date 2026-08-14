@@ -137,7 +137,7 @@
       fb.textContent = '';
       const data = new FormData(form);
       // If the Formspree endpoint has not been configured yet, fall back to opening a mail.
-      if (form.action.indexOf('REPLACE_WITH_FORM_ID') !== -1){
+      if (form.action.indexOf('https://formspree.io/f/mnpazplo') !== -1){
         const email = encodeURIComponent(data.get('email') || '');
         window.location.href = 'mailto:julien@cutoff.be?subject=' +
           encodeURIComponent('CUTOFF — nieuwe inschrijving') +
